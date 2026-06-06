@@ -218,32 +218,73 @@ footer {
   padding: 20px;
   color: #aaa;
 }
+@media screen and (max-width: 600px) {
 
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
+  .navbar {
+    padding: 15px;
   }
 
-  .hero-text {
-    width: 100%;
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .resume-btn {
+    width: 180px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text h2 {
+    font-size: 22px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
   }
 
   .hero-image img {
-    margin-top: 30px;
-    width: 250px;
+    width: 200px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-buttons button {
+    width: 200px;
+    margin-right: 0;
   }
 
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .project-grid {
     grid-template-columns: 1fr;
   }
 
-  .navbar {
-    flex-direction: column;
-    gap: 20px;
+  .contact-card input,
+  .contact-card textarea {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px;
   }
 }
+
